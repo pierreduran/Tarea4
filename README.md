@@ -19,11 +19,11 @@ Se creó un esquema de modulación BPSK para los bits presentados en el archivo 
 
 Para esta solución, se procedió inicialmente a crear una forma de onda sinusoidal normalizada para cada bit con una frecuencia de 5000 Hz para la señal portadora. Dicha señal tiene la forma representada a continuación:
 
-###Imagen
+![SenalSinu](FormaOndaNormalizada.png)
 
 Luego, para crear el esquema de modulación BPSK es importante mencionar que este esquema es la modulación de desplazamiento de fase de 2 símbolos donde dichos símbolos suelen tener un valor de salto de fase de 0º para el 1 y 180º para el 0. Para este caso, si el bit leído es 1 la señal tendrá una forma de onda igual a la portador y si el bit leído es 0 entonces será la forma de onda inversa, es decir, desfasa 180º. A continuación, se muestra la Figura que representa el esquema de modulación BPSK con los primeros bits recibidos en 50 puntos de muestreo por periodo.
 
-###Imagen
+![SenalModu](EsquemaModulacionBPSK.png)
 
 Donde pordemos corroborar, que si se recibe un bit 1, en ese intervalo tendremos la misma forma de onda que la portadora y si recibimos un bit de 0 entonces tendremos la inversa de la portadora.
 
@@ -39,13 +39,16 @@ En este punto se simuló un canal ruidoso del tipo AWGN (ruido aditivo blanco ga
 
 Para obtener este canal, se procedió a utilizar la potencia promedio de la señal modulada y el SNR=2 para obtener un parámetro sigma que determinara el comportamiento normal (gaussiano) del ruido y que presentará la misma forma general que la señal modulada. Por lo que, este ruido (Rx) tendrá la forma de la señal del punto 1 pero con picos de ruido aditivo de tipo normal. A continuación, se observa una representación del canal ruidoso del tipo AWGN de los primeros 5 bits recibidos para 50 puntos de muestreo por periodo.
 
-###Imagen
+![SenaRuido](CanalRuidoso.png)
 
 ### Punto 4) 
 Para este punto se graficó la densidad espectral de potencia de la señal con el método de Welch, antes y después del canal ruidoso. Este método de Welch, nos permite calcular una estimación de la densidad espectral de potencia dividiendo los datos en segmentos superpuestos, calculando un periodograma modificado para cada segmento y promediando los periodogramas. Para obtener la densidad espectral antes del ruido, se utiliza la señal modulada del punto 1, la frecuencia de muestreo (fs) y la longitud de cada segmento obteniendo la siguiente grafica:
 
-###Imagen
+![EspectroAntes](DensidadEspectralAntes.png)
 
 Luego, para obtener la densidad espectral de potencia de la señal después del canal ruidoso utlizamos dentro de la función signal.welch la señal Rx obtenida en el punto 3 que consiste en una señal que suma la señal mudulada con el ruido gaussiano que se creó. Además de esta señal, se utiliza la frecuencia de muestre y la asignación de la longitud de cada segmento. A continuación, se muestra la grafica obtenida:
 
-###Imagen
+![EspectroDespues](DensidadEspectralDespues.png)
+
+### Punto 5)
+
