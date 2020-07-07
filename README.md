@@ -52,3 +52,11 @@ Luego, para obtener la densidad espectral de potencia de la señal después del 
 
 ### Punto 5)
 
+
+Hay un total de 12.0 errores en 10000 bits para una tasa de error de 0.0012 para SNR de -2.0.
+Hay un total de 3.0 errores en 10000 bits para una tasa de error de 0.0003 para SNR de -1.0.
+Hay un total de 1.0 errores en 10000 bits para una tasa de error de 0.0001 para SNR de 0.0.
+Hay un total de 0.0 errores en 10000 bits para una tasa de error de 0.0 para SNR de 1.0.
+Hay un total de 0.0 errores en 10000 bits para una tasa de error de 0.0 para SNR de 2.0.
+Hay un total de 0.0 errores en 10000 bits para una tasa de error de 0.0 para SNR de 3.0.
+
