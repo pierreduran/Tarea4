@@ -67,4 +67,4 @@ Hay un total de 0.0 errores en 10000 bits para una tasa de error de 0.0 para SNR
 
 ### Punto 6)
 Para este punto se graficó BER (bits error rate) de la demodulación y decodificación de la señal contra el vector SNR que indica la relación de señal a ruido que va de -2 a 3dB. Obteniendo la siguiente grafica:
-![BERvsSNR](BERvsSNR.png)
+![BERversusSNR](BERvsSNR.png)
