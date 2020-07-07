@@ -51,7 +51,7 @@ Luego, para obtener la densidad espectral de potencia de la señal después del 
 ![EspectroDespues](DensidadEspectralDespues.png)
 
 ### Punto 5)
-
+Para este punto se demoduló y decodificó la señal y se realizó un conteo de la tasa de error de bits (BER, bit error rate) para cada nivel SNR. Para ello, inicialmente, como se debe de realizar para cada nivel de SNR se debe declarar un vector que va de -2 a 3 y que representaran los decibeles que se solicitan. Seguidamente, se calculó una señal de ruido para cada SNR con el fin de apreciar la señal modulada después del ruido. Una vez hecho esto, se realizó la decodificación de la señal por detección de energía de la señal con ruido con el fin de obtener la tasa de error de bits (BER) por cada nivel del SNR asignado. Dicho resultado se muestra a continuación:
 
 Hay un total de 12.0 errores en 10000 bits para una tasa de error de 0.0012 para SNR de -2.0.
 Hay un total de 3.0 errores en 10000 bits para una tasa de error de 0.0003 para SNR de -1.0.
@@ -60,3 +60,7 @@ Hay un total de 0.0 errores en 10000 bits para una tasa de error de 0.0 para SNR
 Hay un total de 0.0 errores en 10000 bits para una tasa de error de 0.0 para SNR de 2.0.
 Hay un total de 0.0 errores en 10000 bits para una tasa de error de 0.0 para SNR de 3.0.
 
+
+### Punto 6)
+Para este punto se graficó BER (bits error rate) de la demodulación y decodificación de la señal contra el vector SNR que indica la relación de señal a ruido que va de -2 a 3dB. Obteniendo la siguiente grafica:
+![BERvsSNR](BERvsSNR.png)
