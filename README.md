@@ -25,7 +25,7 @@ Luego, para crear el esquema de modulación BPSK es importante mencionar que est
 
 ![SenalModu](EsquemaModulacionBPSK.png)
 
-Donde pordemos corroborar, que si se recibe un bit 1, en ese intervalo tendremos la misma forma de onda que la portadora y si recibimos un bit de 0 entonces tendremos la inversa de la portadora.
+Donde podemos corroborar, que si se recibe un bit 1, en ese intervalo tendremos la misma forma de onda que la portadora y si recibimos un bit de 0 entonces tendremos la inversa de la portadora.
 
 ### Punto 2)
 Se procedió a calcular la potencia promedio de la señal modulada generada, es decir, la señal obtenida en el punto 1. Para ello, se procedió a obtener, inicialmente, la potencia instántanea de la señal la cual se calculó mediante la sumatoria de la señal al cuadrado. Luego, para la potencia promedio se realizó la integral de la potencia instantánea para cada período de cada bit. Obteniendo que:
@@ -35,7 +35,7 @@ La potencia promedio de la señal modulada generada es: 0.4900009800019598 W
 Para 50 puntos de muestreo por período.
 
 ### Punto 3)
-En este punto se simuló un canal ruidoso del tipo AWGN (ruido aditivo blanco gaussiano) con una relación señal a ruido (SNR) desde -2 hasta 3 dB. Sin embargo, para no relizar varias gráficas sobre el coportamiento del canal ruidoso para cada valor del intervalo del SNR, se procede a tomar el valor de 2dB que se encuentra dentro de dicho intervalo. Esto con el fin de observar el comportamiento general que presentará el canal ruidoso AWGN. 
+En este punto se simuló un canal ruidoso del tipo AWGN (ruido aditivo blanco gaussiano) con una relación señal a ruido (SNR) desde -2 hasta 3 dB. Sin embargo, para no relizar varias gráficas sobre el comportamiento del canal ruidoso para cada valor del intervalo del SNR, se procede a tomar el valor de 2dB que se encuentra dentro de dicho intervalo. Esto con el fin de observar el comportamiento general que presentará el canal ruidoso AWGN. 
 
 Para obtener este canal, se procedió a utilizar la potencia promedio de la señal modulada y el SNR=2 para obtener un parámetro sigma que determinara el comportamiento normal (gaussiano) del ruido y que presentará la misma forma general que la señal modulada. Por lo que, este ruido (Rx) tendrá la forma de la señal del punto 1 pero con picos de ruido aditivo de tipo normal. A continuación, se observa una representación del canal ruidoso del tipo AWGN de los primeros 5 bits recibidos para 50 puntos de muestreo por periodo.
 
